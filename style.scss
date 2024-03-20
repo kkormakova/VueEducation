@@ -1,0 +1,169 @@
+$colorText: #292F36;
+$colorParagraph: #4D5053;
+$colorAccent: #F4F0EC;
+$colorCounter: #CDA274;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+.flex {
+    display: flex;
+}
+.fontJost {
+    font-family: "Jost";
+}
+.fontDM {
+    font-family: "DM Serif Text";
+}
+.header {
+    margin-top: 44px;
+    margin-bottom: 57px;
+    justify-content: space-between;
+    align-items: center;
+    &__menu {
+        width: 243px;
+        justify-content: space-between;
+    }
+    &__menu a {
+        font-family: "Jost";
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 25px;
+        color: $colorText;
+    }
+}
+.banner {
+    margin-bottom: 96px;
+    position: relative;
+    &__image {
+        position: relative;
+        width: 1200px;
+        height: 758px;
+    }
+    &__info {
+        position: absolute;
+        z-index: 1;
+        top: 208px;
+        margin-left: 52px;
+    }
+    &__title {
+        font-size: 65px;
+        font-weight: 400;
+        width: 434px;
+        margin-bottom: 18px;
+        color: $colorText;
+    }
+    &__text {
+        color: $colorParagraph;
+        font-size: 22px;
+        font-weight: 400;
+        width: 433px;
+        margin-bottom: 21px;
+    }
+    &__button {
+        width: 220px;
+        height: 75px;
+        padding: 26px 49px 26px 48px;
+        gap: 10px;
+        border-radius: 18px;
+        border: 1px solid $colorText;
+        background-color: $colorText;
+        align-items: center;
+    }
+    &__button span {
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+        width: 98px;
+    }
+}
+.project {
+    flex-direction: column;
+    align-items: center;
+    &__title {
+        font-size: 50px;
+        font-weight: 400;
+        color: $colorText;
+        margin-bottom: 8px;
+    }
+    &__subtitle {
+        font-size: 22px;
+        font-weight: 400;
+        width: 737px;
+        color: $colorParagraph;
+        text-align: center;
+        margin-bottom: 93px;
+    }
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 56px;
+        width: 1200px;
+        justify-items: center;
+        margin-bottom: 96px;
+    }
+    &__card {
+        width: 525px;
+    }
+    &__cardImg {
+        width: 525px;
+        height: 548px;
+        margin-bottom: 24px;
+    }
+    &__cardInfo {
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__cardTitle {
+        font-size: 25px;
+        font-weight: 400;
+        columns: $colorText;
+    }
+    &__cardText {
+        font-size: 22px;
+        font-weight: 400;
+        color: $colorParagraph;
+    }
+    &__cardButton {
+        width: 70px;
+        height: 70px;
+        border: 1px solid $colorAccent;
+        background-color: $colorAccent;
+        border-radius: 50px;
+    }
+}
+.counter {
+    height: 457px;
+    background-color:$colorAccent;
+    align-items: center;
+    margin-bottom: 96px;
+    &__cardBox {
+        align-items: center;
+    }
+    &__card {
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+    }
+    &__title {
+        font-size: 85px;
+        font-weight: 400;
+        color: $colorCounter;
+    }
+    &__text {
+        font-size: 22px;
+        font-weight: 400;
+        color: $colorParagraph;
+    }
+    &__cardLine {
+        border-right: 1px solid $colorCounter;
+    }
+}

@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.flex {
+  display: flex;
+}
+
+.fontJost {
+  font-family: "Jost";
+}
+
+.fontDM {
+  font-family: "DM Serif Text";
+}
+
+.header {
+  margin-top: 44px;
+  margin-bottom: 57px;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__menu {
+  width: 243px;
+  justify-content: space-between;
+}
+.header__menu a {
+  font-family: "Jost";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #292F36;
+}
+
+.banner {
+  margin-bottom: 96px;
+  position: relative;
+}
+.banner__image {
+  position: relative;
+  width: 1200px;
+  height: 758px;
+}
+.banner__info {
+  position: absolute;
+  z-index: 1;
+  top: 208px;
+  margin-left: 52px;
+}
+.banner__title {
+  font-size: 65px;
+  font-weight: 400;
+  width: 434px;
+  margin-bottom: 18px;
+  color: #292F36;
+}
+.banner__text {
+  color: #4D5053;
+  font-size: 22px;
+  font-weight: 400;
+  width: 433px;
+  margin-bottom: 21px;
+}
+.banner__button {
+  width: 220px;
+  height: 75px;
+  padding: 26px 49px 26px 48px;
+  gap: 10px;
+  border-radius: 18px;
+  border: 1px solid #292F36;
+  background-color: #292F36;
+  align-items: center;
+}
+.banner__button span {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  width: 98px;
+}
+
+.project {
+  flex-direction: column;
+  align-items: center;
+}
+.project__title {
+  font-size: 50px;
+  font-weight: 400;
+  color: #292F36;
+  margin-bottom: 8px;
+}
+.project__subtitle {
+  font-size: 22px;
+  font-weight: 400;
+  width: 737px;
+  color: #4D5053;
+  text-align: center;
+  margin-bottom: 93px;
+}
+.project__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 56px;
+  width: 1200px;
+  justify-items: center;
+  margin-bottom: 96px;
+}
+.project__card {
+  width: 525px;
+}
+.project__cardImg {
+  width: 525px;
+  height: 548px;
+  margin-bottom: 24px;
+}
+.project__cardInfo {
+  justify-content: space-between;
+  align-items: center;
+}
+.project__cardTitle {
+  font-size: 25px;
+  font-weight: 400;
+  -moz-columns: #292F36;
+       columns: #292F36;
+}
+.project__cardText {
+  font-size: 22px;
+  font-weight: 400;
+  color: #4D5053;
+}
+.project__cardButton {
+  width: 70px;
+  height: 70px;
+  border: 1px solid #F4F0EC;
+  background-color: #F4F0EC;
+  border-radius: 50px;
+}
+
+.counter {
+  height: 457px;
+  background-color: #F4F0EC;
+  align-items: center;
+  margin-bottom: 96px;
+}
+.counter__cardBox {
+  align-items: center;
+}
+.counter__card {
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+.counter__title {
+  font-size: 85px;
+  font-weight: 400;
+  color: #CDA274;
+}
+.counter__text {
+  font-size: 22px;
+  font-weight: 400;
+  color: #4D5053;
+}
+.counter__cardLine {
+  border-right: 1px solid #CDA274;
+}/*# sourceMappingURL=style.css.map */
