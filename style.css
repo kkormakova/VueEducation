@@ -255,4 +255,43 @@
   border: 1px solid #F4F0EC;
   background-color: #F4F0EC;
   border-radius: 50px;
+}
+
+.footer {
+  height: 406px;
+  justify-content: space-between;
+}
+.footer__logo {
+  margin-bottom: 18px;
+}
+.footer__text {
+  width: 393px;
+  font-size: 22px;
+  font-weight: 400;
+  color: #4D5053;
+}
+.footer__social {
+  gap: 51px;
+  margin-top: 31px;
+}
+.footer__pages, .footer__contacts {
+  flex-direction: column;
+  gap: 26px;
+}
+.footer__title {
+  font-size: 25px;
+  font-weight: 400;
+  color: #292F36;
+}
+.footer__linkPage {
+  font-size: 22px;
+  font-weight: 400;
+  color: #4D5053;
+  width: 340px;
+}
+.footer__textContact {
+  width: 258px;
+  font-size: 22px;
+  font-weight: 400;
+  color: #4D5053;
 }/*# sourceMappingURL=style.css.map */

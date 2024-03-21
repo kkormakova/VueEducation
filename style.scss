@@ -252,3 +252,41 @@ $colorCardCounter: #E7E7E7;
         border-radius: 50px;
     }
 }
+.footer {
+    height: 406px;
+    justify-content: space-between;
+    &__logo {
+        margin-bottom: 18px;
+    }
+    &__text {
+        width: 393px;
+        font-size: 22px;
+        font-weight: 400;
+        color: $colorParagraph;
+    }
+    &__social {
+        gap: 51px;
+        margin-top: 31px;
+    }
+    &__pages, &__contacts {
+        flex-direction: column;
+        gap: 26px;
+    }
+    &__title {
+        font-size: 25px;
+        font-weight: 400;
+        color: $colorText;
+    }
+    &__linkPage {
+        font-size: 22px;
+        font-weight: 400;
+        color: $colorParagraph;
+        width: 340px;
+    }
+    &__textContact {
+        width: 258px;
+        font-size: 22px;
+        font-weight: 400;
+        color: $colorParagraph;
+    }
+}
