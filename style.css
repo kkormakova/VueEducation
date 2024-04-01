@@ -22,6 +22,21 @@
   font-family: "DM Serif Text";
 }
 
+.breadcrumbs {
+  justify-content: center;
+}
+
+.breadcrumbs__link {
+  font-size: 22px;
+  font-weight: 400;
+  color: #4D5053;
+}
+
+.breadcrumbs__link:last-child::before {
+  content: "/";
+  padding: 0px 10px 0px 10px;
+}
+
 .header {
   margin-top: 44px;
   margin-bottom: 57px;
@@ -171,7 +186,7 @@
   border-right: 1px solid #CDA274;
 }
 
-.articles {
+.articles__container {
   flex-direction: column;
   align-items: center;
 }
@@ -256,6 +271,39 @@
   background-color: #F4F0EC;
   border-radius: 50px;
 }
+.articles__containerBlog {
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 200px;
+}
+.articles__cardBoxBlog {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+.articles__pagesContainer {
+  justify-content: center;
+  margin-top: 21px;
+}
+.articles__pages {
+  width: 268px;
+  height: 52px;
+  gap: 20px;
+}
+.articles__pageButton {
+  width: 52px;
+  height: 52px;
+  border: 1px solid #CDA274;
+  background-color: #FFFFFF;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #292F36;
+}
+.articles__pageButton:hover {
+  border: 1px solid #F4F0EC;
+  background-color: #F4F0EC;
+}
 
 .footer {
   height: 406px;
@@ -294,4 +342,71 @@
   font-size: 22px;
   font-weight: 400;
   color: #4D5053;
+}
+
+.bannerBlog {
+  position: relative;
+  background-image: url(/img/banner.png);
+  height: 356px;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+.bannerBlog__about {
+  position: absolute;
+  flex-direction: column;
+  width: 503px;
+  height: 178px;
+  top: 178px;
+  padding: 41px 78px 41px 78px;
+  gap: 10px;
+  border-radius: 37px 37px 0px 0px;
+  background-color: #FFFFFF;
+}
+.bannerBlog__title {
+  font-size: 50px;
+  font-weight: 400;
+  color: #292F36;
+}
+
+.latestPost {
+  margin-bottom: 150px;
+}
+.latestPost__title {
+  font-size: 50px;
+  font-weight: 400;
+  margin-bottom: 27px;
+}
+.latestPost__about {
+  border: 1px solid #E7E7E7;
+  height: 522px;
+  padding: 22px;
+  gap: 65px;
+  border-radius: 62px;
+}
+.latestPost__aboutCard {
+  flex-direction: column;
+  gap: 22px;
+}
+.latestPost__aboutTitle {
+  width: 463px;
+  font-size: 25px;
+  font-weight: 400;
+  color: #292F36;
+  margin-top: 51px;
+}
+.latestPost__aboutText {
+  width: 469px;
+  font-size: 22px;
+  font-weight: 400;
+  color: #4D5053;
+}
+.latestPost__date {
+  width: 489px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.latestPost__dateText {
+  font-size: 16px;
+  font-weight: 400;
 }/*# sourceMappingURL=style.css.map */
